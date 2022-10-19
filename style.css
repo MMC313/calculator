@@ -1,6 +1,88 @@
-
-
-
-.display{
-    outline: 1px solid black;
+html{
+    background: url(../calculator/images/table.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
 }
+
+body{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.border{
+    display: flex;
+    background-image: linear-gradient(rgb(96, 96, 96),rgb(49, 49, 49));
+    outline: 7px solid black;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+    width: 400px;
+    padding: 15px;
+    border-radius: 15px;
+}
+.displays{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    outline: 3px solid black;
+    background-image: linear-gradient(rgb(221, 252, 221),rgb(186, 255, 186));
+    width: 400px;
+    height: 100px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+   
+}
+
+@font-face {
+    font-family:'clock';
+    src: url(./fonts/digital-7/digital-7.ttf)
+}
+.d1,.d2{
+    font-size: 2.75vw;
+    font-family: "clock";
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    height: 350px;
+    width: 400px;
+    justify-content: end;
+    outline: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(31, 31, 31);
+    
+    
+}
+
+.button{
+    height: 70px;
+    width: 100px;
+    border-radius: 15px;
+    color: white;
+    font-size: 24px;
+}
+
+.number.button,.decimal,.back{
+    background-image: linear-gradient(Darkgray, black, black);
+}
+
+.equal,.operator,.sign,.percent{
+    background-image: linear-gradient(rgb(240, 188, 89),darkorange,darkorange);
+}
+
+.back{
+    background-image: linear-gradient(darkgrey,black);
+}
+
+.clear{
+    background-image: linear-gradient(rgb(231, 74, 74),rgb(255, 48, 48));
+}
+
+
